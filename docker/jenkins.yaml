@@ -7,4 +7,4 @@ jenkins:
               attributeName: "memberOf"
           inhibitInferRootDN: false
           rootDN: "dc=acme,dc=org"
-          server: "ldaps://ldap.acme.org:1636"
+          server: "ldaps://ldap.acme.org:1637"
