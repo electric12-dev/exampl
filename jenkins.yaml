@@ -1,8 +1,8 @@
 jenkins:
-  proxy:
-    name: "proxyhost"
-    port: 80
-    userName: "admin"
-    password: "admin"
-    noProxyHost: "externalhost"
-    testUrl: "http://google.com"
+  securityRealm:
+    local:
+      allowsSignup: false
+      users:
+        - id: "admin"
+          password: "somethingsecret"
+  authorizationStrategy: loggedInUsersCanDoAnything
