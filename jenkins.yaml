@@ -26,10 +26,11 @@ credentials:
               privateKeySource:
                 directEntry:
                   privateKey: ${SSH_PRIVATE_KEY}
-proxy:
-   name: "proxyhost"
-   port: 80
-   userName: "login"
-   password: "password"
-   noProxyHost: "externalhost"
-   testUrl: "http://google.com"
+jenkins:
+  proxy:
+    name: "proxyhost"
+    port: 80
+    userName: "login"
+    password: "password"
+    noProxyHost: "externalhost"
+    testUrl: "http://google.com"
