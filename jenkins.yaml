@@ -7,7 +7,7 @@ jenkins:
       allowsSignup: false
       users:
        - id: first
-         password: ${example}
+         password: ${adminpw:example}
   authorizationStrategy:
     globalMatrix:
       grantedPermissions:
