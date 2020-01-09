@@ -27,8 +27,8 @@ jenkins:
       enableCaptcha: false
       users:
       - id: "admin"
-      - id: "example"
-  slaveAgentPort: -1
+      - id: "first"
+  slaveAgentPort: 50000
   updateCenter:
     sites:
     - id: "default"
@@ -67,14 +67,14 @@ unclassified:
     useSsl: false
     watchingEnabled: false
   gitHubPluginConfig:
-    hookUrl: "http://54.165.127.80:8080/github-webhook/"
+    hookUrl: "http://54.209.160.31:8080/github-webhook/"
   gitSCM:
     createAccountBasedOnEmail: false
     showEntireCommitSummaryInChanges: false
     useExistingAccountWithSameEmail: false
   location:
     adminAddress: "address not configured yet <nobody@nowhere>"
-    url: "http://54.165.127.80:8080/"
+    url: "http://54.209.160.31:8080/"
   mailer:
     charset: "UTF-8"
     useSsl: false
