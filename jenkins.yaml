@@ -28,6 +28,7 @@ jenkins:
       users:
       - id: "admin"
       - id: "first"
+      password: ${adminpw:-passw0rd}
   slaveAgentPort: 50000
   updateCenter:
     sites:
