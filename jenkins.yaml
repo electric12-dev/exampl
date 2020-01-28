@@ -1,11 +1,16 @@
-jenkins:
-  systemMessage: "Welcome to the demo setup for Jenkins Configuration as Code plugin.  For more information look in the official repo with our demo setup: https://github.com/Praqma/praqma-jenkins-casc"
-  agentProtocols:
-    - "JNLP4-connect"
-  securityRealm:
-    local:
-      allowsSignup: false
-      users:
-       - id: first
-         password: ${adminpw:-example}
+pipelineJob('job-dsl-plugin') {
+  definition {
+    cpsScm {
+      scm {
+        git {
+          remote {
+            url('https://github.com/electric12-dev/exampl.git')
+          }
+          branch('*/master')
+        }
+      }
+      lightweight()
+    }
+  }
+}
 
