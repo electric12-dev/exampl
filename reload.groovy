@@ -1,6 +1,6 @@
 import io.jenkins.plugins.casc.ConfigurationAsCode;
 node {
     stage('Reload JCasC') {
-        ConfigurationAsCode.get().configure(env.HOME)
+        ConfigurationAsCode.get().configure(env.CASC_JENKINS_CONFIG)
     }
 }
